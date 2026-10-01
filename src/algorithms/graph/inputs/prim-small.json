@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    { "id": "A", "label": "A", "x": 100, "y": 180 },
+    { "id": "B", "label": "B", "x": 300, "y": 80 },
+    { "id": "C", "label": "C", "x": 300, "y": 280 },
+    { "id": "D", "label": "D", "x": 520, "y": 180 }
+  ],
+  "edges": [
+    { "id": "AB", "source": "A", "target": "B", "weight": 1 },
+    { "id": "AC", "source": "A", "target": "C", "weight": 4 },
+    { "id": "BC", "source": "B", "target": "C", "weight": 2 },
+    { "id": "BD", "source": "B", "target": "D", "weight": 5 },
+    { "id": "CD", "source": "C", "target": "D", "weight": 3 }
+  ]
+}

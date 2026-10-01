@@ -1,0 +1,22 @@
+{
+  "startId": "A",
+  "endId": "D",
+  "nodes": [
+    { "id": "A", "label": "A", "x": 100, "y": 180 },
+    { "id": "B", "label": "B", "x": 280, "y": 100 },
+    { "id": "C", "label": "C", "x": 280, "y": 260 },
+    { "id": "D", "label": "D", "x": 500, "y": 180 }
+  ],
+  "edges": [
+    { "id": "AB", "source": "A", "target": "B", "weight": 2 },
+    { "id": "AC", "source": "A", "target": "C", "weight": 5 },
+    { "id": "BD", "source": "B", "target": "D", "weight": 2 },
+    { "id": "CD", "source": "C", "target": "D", "weight": 1 }
+  ],
+  "heuristic": {
+    "A": 4,
+    "B": 2,
+    "C": 1,
+    "D": 0
+  }
+}
