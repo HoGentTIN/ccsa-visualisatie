@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig(({ command }) => {
-  const base = command === 'serve' ? '/' : '/ccsa-visualizer/'
+  const base = command === 'serve' ? '/' : '/ccsa-visualisatie/'
 
   return {
     plugins: [
