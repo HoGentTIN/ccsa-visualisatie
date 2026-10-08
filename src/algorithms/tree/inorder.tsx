@@ -152,7 +152,7 @@ function* run(input: InOrderInput): Generator<AlgorithmFrame> {
 
         yield {
             visual: { type: 'graph', nodes: snapshot([v]), edges: snapshotEdges() },
-            variables: { v, visitOrder: [...visitOrder] },
+            variables: { v },
             highlightedLines: [LINE_OFFSET + 3],
             description: `Bezoek knoop "${v}" (visit functie aangeroepen)`,
             callStack: getCallStack(),
@@ -209,7 +209,7 @@ function* run(input: InOrderInput): Generator<AlgorithmFrame> {
     // Laatste frame
     yield {
         visual: { type: 'graph', nodes: snapshot(), edges: snapshotEdges() },
-        variables: { visitOrder: [...visitOrder] },
+        variables: { },
         highlightedLines: [5, 13],
         description: `Klaar! In-order volgorde: ${visitOrder.join(' → ')}`,
         callStack: getCallStack(),
