@@ -266,7 +266,7 @@ export const inOrderDefinition = defineAlgorithm<InOrderInput>({
     inputs: [
         {
             id: 'classic',
-            name: 'Binary tree',
+            name: 'Binaire boom',
             input: classicTree,
         },
         {

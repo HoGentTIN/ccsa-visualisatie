@@ -57,7 +57,7 @@ function* run(input: Input): Generator<AlgorithmFrame> {
             description: `Nieuwe iteratie: i ← ${i}. Deelrij a[0..${i - 1}] is al gesorteerd; a[${i}] moet ingevoegd worden.`,
         }
 
-        let x = a[i]
+        const x = a[i]
         yield {
             visual: { type: 'array', elements: snapshot([i], i - 1) },
             variables: { n, i, x, 'a[i]': a[i], a: [...a] },
@@ -160,17 +160,17 @@ export const cardSortDefinition: AnyAlgorithmDefinition = defineAlgorithm<Input>
     inputs: [
         {
             id: 'classic',
-            name: 'Classic array',
+            name: 'Rij',
             input: { values: [44, 55, 12, 42, 94, 18, 6, 67] },
         },
         {
             id: 'nearly-sorted',
-            name: 'Nearly sorted',
+            name: 'Bijna gesorteerd',
             input: { values: [5, 9, 11, 12, 13, 14, 4] },
         },
         {
-            id: 'reversed',
-            name: 'Reversed',
+            id: 'Omgekeerd gesorteerd',
+            name: 'Omgekeerd gesorteerd',
             input: { values: [9, 8, 7, 6, 5, 4, 3, 2] },
         },
     ],

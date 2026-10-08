@@ -226,12 +226,12 @@ export const genericSearchDefinition = defineAlgorithm<GenericSearchInput>({
     inputs: [
         {
             id: 'classic',
-            name: 'Classic graph',
+            name: 'Graaf',
             input: classicInput,
         },
         {
             id: 'small',
-            name: 'Small graph',
+            name: 'Kleine graaf',
             input: smallInput,
         },
     ],
