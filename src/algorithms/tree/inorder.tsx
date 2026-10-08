@@ -271,7 +271,7 @@ export const inOrderDefinition = defineAlgorithm<InOrderInput>({
         },
         {
             id: 'small',
-            name: 'Small tree',
+            name: 'Kleine boom',
             input: smallTree,
         },
     ],

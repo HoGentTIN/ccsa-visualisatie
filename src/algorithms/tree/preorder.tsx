@@ -245,7 +245,7 @@ export const preOrderDefinition = defineAlgorithm<PreOrderInput>({
         },
         {
             id: 'small',
-            name: 'Small tree',
+            name: 'Kleine boom',
             input: smallTree,
         },
     ],
