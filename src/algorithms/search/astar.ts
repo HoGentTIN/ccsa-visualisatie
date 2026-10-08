@@ -423,12 +423,12 @@ export const aStarDefinition = defineAlgorithm<AStarInput>({
         },
         {
             id: 'classic',
-            name: 'Classic graph',
+            name: 'Klassieke graaf',
             input: classicInput,
         },
         {
             id: 'small',
-            name: 'Small graph',
+            name: 'Kleine graaf',
             input: smallInput,
         },
     ],

@@ -190,7 +190,7 @@ function* run(input: PreOrderInput): Generator<AlgorithmFrame> {
     }
 }
 
-// Input data - binary tree example
+// Input data - Binaire boom example
 const classicTree: PreOrderInput = {
     rootId: 'A',
     nodes: [
@@ -240,12 +240,12 @@ export const preOrderDefinition = defineAlgorithm<PreOrderInput>({
     inputs: [
         {
             id: 'classic',
-            name: 'Binary tree',
+            name: 'Binaire boom',
             input: classicTree,
         },
         {
             id: 'small',
-            name: 'Small tree',
+            name: 'Kleine boom',
             input: smallTree,
         },
     ],

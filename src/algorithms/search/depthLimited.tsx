@@ -426,7 +426,7 @@ function* run(input: DepthLimitedInput): Generator<AlgorithmFrame> {
             start: startId,
             goal: goalId,
         },
-        highlightedLines: [TOP_OFFSET + 0, TOP_OFFSET + 1], // comment + function header
+        highlightedLines: [TOP_OFFSET, TOP_OFFSET + 1], // comment + function header
         description: `Start DEPTHLIMITEDSEARCH met max diepte d = ${maxDepth}`,
         callStack: getCallStack(),
     })
@@ -561,7 +561,7 @@ export const depthLimitedDefinition = defineAlgorithm<DepthLimitedInput>({
         },
         {
             id: 'depth-1',
-            name: 'Diepte = 1 (hit boundary)',
+            name: 'Diepte = 1 (max diepte bereikt zonder oplossing)',
             input: deeperInput,
         },
     ],

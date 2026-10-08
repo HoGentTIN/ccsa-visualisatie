@@ -163,17 +163,17 @@ export const selectionSortDefinition: AnyAlgorithmDefinition = defineAlgorithm<I
     inputs: [
         {
             id: 'classic',
-            name: 'Classic array',
+            name: 'Rij',
             input: { values: [44, 55, 12, 42, 94, 18, 6, 67] },
         },
         {
             id: 'nearly-sorted',
-            name: 'Nearly sorted',
+            name: 'Bijna gesorteerd',
             input: { values: [11, 12, 22, 25, 34, 90, 64] },
         },
         {
-            id: 'reversed',
-            name: 'Reversed',
+            id: 'Omgekeerd gesorteerd',
+            name: 'Omgekeerd gesorteerd',
             input: { values: [90, 64, 34, 25, 22, 12, 11] },
         },
     ],
